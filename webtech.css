@@ -238,6 +238,32 @@ footer {
     color: var(--text-gray);
 }
 
+
+.trainers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.trainer-card {
+    background: #1f0b35;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+
+.trainer-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
 /* Форма записи */
 #contact-form {
     background-color: var(--bg-card);
