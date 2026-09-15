@@ -199,63 +199,23 @@ footer {
     color: var(--text-gray);
 }
 
-/* Тренеры */
+/*Тренеры*/
 .trainers-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
-
-.trainer-card {
-    background-color: var(--bg-card);
-    border: 1px solid var(--accent-purple);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    margin: 10px auto;
-    max-width: 350px;
-    flex: 1 1 260px;
-}
-
-.trainer-img {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid var(--accent-pink);
-    margin-bottom: 15px;
-}
-
-.trainer-card h2 {
-    font-size: 20px;
-    margin-bottom: 5px;
-}
-
-.trainer-card ul {
-    list-style: none;
-    margin-top: 10px;
-    color: var(--text-gray);
-}
-
-
-.trainers-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
 
 .trainer-card {
     background: #1f0b35;
+    border: 1px solid var(--accent-purple);
     border-radius: 12px;
     overflow: hidden;
     width: 300px;
     text-align: center;
     padding-bottom: 15px;
 }
-
 
 .trainer-card img {
     width: 100%;
@@ -264,7 +224,21 @@ footer {
     display: block;
 }
 
-/* Форма записи */
+.trainer-card h2 {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: var(--text-light);
+}
+
+.trainer-card ul {
+    list-style: none;
+    padding: 0 15px;
+    margin-top: 10px;
+    color: var(--text-gray);
+}
+
+/* Профиль*/
 #contact-form {
     background-color: var(--bg-card);
     max-width: 500px;
@@ -290,11 +264,12 @@ footer {
     width: 100%;
     padding: 12px;
     margin-top: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     background-color: var(--bg-deep);
     border: 1px solid var(--accent-purple);
     color: var(--text-light);
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 #contact-form input[type="color"] {
