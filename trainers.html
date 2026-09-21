@@ -3,131 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HandsUp Fitness Club | Тренеры</title>
+    <title>HandsUp Fitness Club - Тренеры</title>
     <link rel="stylesheet" href="webtech.css">
 </head>
 <body>
 
-    <header id="main-header">
+    <header>
         <div class="nav-container">
-            <a href="index.html" class="logo">HandsUp Fitness</a>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="pricing.html">Абонементы</a></li>
-                    <li><a href="schedule.html">Расписание</a></li>
-                    <li><a href="branches.html">Филиалы</a></li>
-                    <li><a href="trainers.html">Тренеры</a></li>
-                    <li><a href="profile.html">Запись / Профиль</a></li>
-                </ul>
-            </nav>
+            <a href="index.html" class="logo">⚡ HandsUp</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="schedule.html">Расписание</a></li>
+                <li><a href="pricing.html">Цены</a></li>
+                <li><a href="trainers.html" class="active">Тренеры</a></li>
+                <li><a href="branches.html">Филиалы</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+            </ul>
         </div>
     </header>
 
-    <main class="page-container">
-        <h1>Наша команда тренеров</h1>
-        <p>Профессиональные наставники помогут вам достичь результатов!</p>
+    <div class="page-grid">
+        <aside>
+            <h3 style="margin-bottom: 1rem; color: var(--primary-color);">Направления</h3>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.8rem;">
+                <li><a href="#" style="color: var(--text-muted); text-decoration: none;">Силовые</a></li>
+                <li><a href="#" style="color: var(--text-muted); text-decoration: none;">Кроссфит</a></li>
+                <li><a href="#" style="color: var(--text-muted); text-decoration: none;">Йога</a></li>
+            </ul>
+        </aside>
 
-        <div class="card-row">
-            <div class="trainer-card">
-                <div>
-                    <img src="тренер 1.jpg" alt="Нурислам">
-                    <h2>Бейсенбек Нурислам</h2>
-                    <p><strong>Специализация:</strong> Силовой тренинг</p>
-                    <ul>
-                        <li>Опыт работы: 6 лет</li>
-                        <li>Мастер спорта</li>
-                    </ul>
+        <main>
+            <section>
+                <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Наши тренеры</h1>
+                <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 2rem;">Профессионалы с многолетним опытом работы и международными сертификатами.</p>
+                
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="тренер 1.jpg" alt="Тренер">
+                        <div class="card-content">
+                            <h3>Алексей Смирнов</h3>
+                            <p>Мастер спорта по тяжелой атлетике. Стаж более 8 лет.</p>
+                            <a href="#" class="btn">Записаться</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="тренер 2.jpg" alt="Тренер">
+                        <div class="card-content">
+                            <h3>Мария Ким</h3>
+                            <p>Сертифицированный инструктор по йоге и пилатесу.</p>
+                            <a href="#" class="btn">Записаться</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="тренер 3.jpg" alt="Тренер">
+                        <div class="card-content">
+                            <h3>Дмитрий Власов</h3>
+                            <p>Элит-тренер кроссфит программ и функционального тренинга.</p>
+                            <a href="#" class="btn">Записаться</a>
+                        </div>
+                    </div>
                 </div>
-                <a href="profile.html" class="btn" style="margin-top: 15px;">Записаться</a>
-            </div>
+            </section>
+        </main>
 
-            <div class="trainer-card">
-                <div>
-                    <img src="тренер 3.jpg" alt="Аскар">
-                    <h2>Кайратов Аскар</h2>
-                    <p><strong>Специализация:</strong> Кроссфит</p>
-                    <ul>
-                        <li>Опыт работы: 5 лет</li>
-                        <li>Функциональный тренинг</li>
-                    </ul>
-                </div>
-                <a href="profile.html" class="btn" style="margin-top: 15px;">Записаться</a>
-            </div>
-
-            <div class="trainer-card">
-                <div>
-                    <img src="тренер 4.jpg" alt="Алия">
-                    <h2>Жумабекова Алия</h2>
-                    <p><strong>Специализация:</strong> Пилатес</p>
-                    <ul>
-                        <li>Опыт работы: 3 года</li>
-                        <li>Инструктор</li>
-                    </ul>
-                </div>
-                <a href="profile.html" class="btn" style="margin-top: 15px;">Записаться</a>
-            </div>
-
-            <div class="trainer-card">
-                <div>
-                    <img src="тренер 2.jpg" alt="Алина">
-                    <h2>Турсынбаева Алина</h2>
-                    <p><strong>Специализация:</strong> Йога</p>
-                    <ul>
-                        <li>Опыт работы: 4 года</li>
-                        <li>Инструктор по йоге</li>
-                    </ul>
-                </div>
-                <a href="profile.html" class="btn" style="margin-top: 15px;">Записаться</a>
-            </div>
-        </div>
-
-        <h2 style="margin-top: 50px;">Галерея клуба</h2>
-        <p>Посмотрите на атмосферу наших залов</p>
-        <div class="image-gallery">
-            <div class="gallery-item">
-                <img src="биг.jpg" alt="Фото 1">
-                <div class="gallery-overlay"><p>Тренажерный зал</p></div>
-            </div>
-            <div class="gallery-item">
-                <img src="обыч.jpg" alt="Фото 2">
-                <div class="gallery-overlay"><p>Зона кроссфита</p></div>
-            </div>
-            <div class="gallery-item">
-                <img src="тренер 1.jpg" alt="Фото 3">
-                <div class="gallery-overlay"><p>Силовые тренировки</p></div>
-            </div>
-            <div class="gallery-item">
-                <img src="тренер 2.jpg" alt="Фото 4">
-                <div class="gallery-overlay"><p>Йога студия</p></div>
-            </div>
-            <div class="gallery-item">
-                <img src="тренер 3.jpg" alt="Фото 5">
-                <div class="gallery-overlay"><p>Функциональная зона</p></div>
-            </div>
-            <div class="gallery-item">
-                <img src="тренер 4.jpg" alt="Фото 6">
-                <div class="gallery-overlay"><p>Зал пилатеса</p></div>
-            </div>
-            <div class="gallery-item">
-                <img src="биг.jpg" alt="Фото 7">
-                <div class="gallery-overlay"><p>Бассейн</p></div>
-            </div>
-            <div class="gallery-item">
-                <img src="обыч.jpg" alt="Фото 8">
-                <div class="gallery-overlay"><p>Фито-бар</p></div>
-            </div>
-            <div class="gallery-item">
-                <img src="биг.jpg" alt="Фото 9">
-                <div class="gallery-overlay"><p>Зона отдыха</p></div>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <p>Разработчики: Shyndaly Bagnyr, Aitzhanova Aigerim, Shamshidin Aruzhan | Группа: SE-2502</p>
-        <p>&copy; 2026 HandsUp Fitness Club.</p>
-    </footer>
+        <footer>
+            <p>&copy; 2026 HandsUp Fitness Club. Все права защищены.</p>
+        </footer>
+    </div>
 
 </body>
 </html>

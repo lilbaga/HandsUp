@@ -3,70 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HandsUp Fitness Club | Филиалы</title>
+    <title>HandsUp Fitness Club - Филиалы</title>
     <link rel="stylesheet" href="webtech.css">
 </head>
 <body>
 
-    <header id="main-header">
+    <header>
         <div class="nav-container">
-            <a href="index.html" class="logo">HandsUp Fitness</a>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="pricing.html">Абонементы</a></li>
-                    <li><a href="schedule.html">Расписание</a></li>
-                    <li><a href="branches.html">Филиалы</a></li>
-                    <li><a href="trainers.html">Тренеры</a></li>
-                    <li><a href="profile.html">Запись / Профиль</a></li>
-                </ul>
-            </nav>
+            <a href="index.html" class="logo">⚡ HandsUp</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="schedule.html">Расписание</a></li>
+                <li><a href="pricing.html">Цены</a></li>
+                <li><a href="trainers.html">Тренеры</a></li>
+                <li><a href="branches.html" class="active">Филиалы</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+            </ul>
         </div>
     </header>
 
-    <main class="page-container">
-        <h1>Наши филиалы</h1>
-        <p>Выберите удобный для вас фитнес-центр в городе:</p>
+    <div class="page-grid">
+        <aside>
+            <h3 style="margin-bottom: 1rem; color: var(--primary-color);">Город</h3>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.8rem;">
+                <li><a href="#" style="color: var(--text-muted); text-decoration: none;">Астана</a></li>
+            </ul>
+        </aside>
 
-        <div class="card-row">
-            <div class="branch-card">
-                <div>
-                    <h2>HandsUp BIG</h2>
-                    <p><strong>Адрес:</strong> пр. Улы Дала, 55</p>
-                    <p><strong>Режим работы:</strong> 07:00 - 22:00</p>
-                    <img src="биг.jpg" alt="Филиал Big">
-                    <h3>Удобства:</h3>
-                    <ul>
-                        <li>Большой тренажерный зал</li>
-                        <li>Бассейн и сауна</li>
-                        <li>Парковка для клиентов</li>
-                    </ul>
+        <main>
+            <section>
+                <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Наши филиалы</h1>
+                <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 2rem;">Современные залы, расположенные в удобных районах города.</p>
+                
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="биг.jpg" alt="Филиал">
+                        <div class="card-content">
+                            <h3>HandsUp Central</h3>
+                            <p>ул. Мангилик Ел, 55. Большой плавательный бассейн и тренажерный зал.</p>
+                            <a href="#" class="btn">На карте</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="обыч.jpg" alt="Филиал">
+                        <div class="card-content">
+                            <h3>HandsUp Left Bank</h3>
+                            <p>пр. Сарайшык, 7. Уютный зал с зоной единоборств и кроссфита.</p>
+                            <a href="#" class="btn">На карте</a>
+                        </div>
+                    </div>
                 </div>
-                <a href="profile.html" class="btn" style="margin-top: 15px;">Выбрать филиал</a>
-            </div>
+            </section>
+        </main>
 
-            <div class="branch-card">
-                <div>
-                    <h2>HandsUp</h2>
-                    <p><strong>Адрес:</strong> ул. Республики, 10</p>
-                    <p><strong>Режим работы:</strong> 07:00 - 22:00</p>
-                    <img src="обыч.jpg" alt="Филиал Обычный">
-                    <h3>Удобства:</h3>
-                    <ul>
-                        <li>Зона кроссфита</li>
-                        <li>Зал для йоги и стретчинга</li>
-                        <li>Фито-бар</li>
-                    </ul>
-                </div>
-                <a href="profile.html" class="btn" style="margin-top: 15px;">Выбрать филиал</a>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <p>Разработчики: Shyndaly Bagnyr, Aitzhanova Aigerim, Shamshidin Aruzhan | Группа: SE-2502</p>
-        <p>&copy; 2026 HandsUp Fitness Club.</p>
-    </footer>
+        <footer>
+            <p>&copy; 2026 HandsUp Fitness Club. Все права защищены.</p>
+        </footer>
+    </div>
 
 </body>
 </html>
