@@ -3,59 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HandsUp Fitness Club | Главная</title>
+    <title>HandsUp Fitness Club - Главная</title>
     <link rel="stylesheet" href="webtech.css">
 </head>
 <body>
 
-    <header id="main-header">
+    <header>
         <div class="nav-container">
-            <a href="index.html" class="logo">HandsUp Fitness</a>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="pricing.html">Абонементы</a></li>
-                    <li><a href="schedule.html">Расписание</a></li>
-                    <li><a href="branches.html">Филиалы</a></li>
-                    <li><a href="trainers.html">Тренеры</a></li>
-                    <li><a href="profile.html">Запись / Профиль</a></li>
-                </ul>
-            </nav>
+            <a href="index.html" class="logo">⚡ HandsUp</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Главная</a></li>
+                <li><a href="schedule.html">Расписание</a></li>
+                <li><a href="pricing.html">Цены</a></li>
+                <li><a href="trainers.html">Тренеры</a></li>
+                <li><a href="branches.html">Филиалы</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+            </ul>
         </div>
     </header>
 
-    <main class="page-container">
-        <section style="text-align: center; padding: 50px 20px; background: linear-gradient(135deg, var(--bg-card), var(--accent-burgundy)); border-radius: 12px; border: 1px solid var(--accent-purple); margin-bottom: 30px;">
-            <h1 style="color: var(--text-light); margin-bottom: 15px;">Добро пожаловать в наше фитнес-пространство</h1>
-            <p style="color: var(--text-gray); max-width: 600px; margin: 0 auto;">Достигай своих целей вместе с HandsUp Fitness. Современные технологии тренировок и полная концентрация на результат!</p>
-        </section>
+    <div class="page-grid">
+        
+        <aside>
+            <h3 style="margin-bottom: 1rem; color: var(--primary-color);">Навигация</h3>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.8rem;">
+                <li><a href="#about" style="color: var(--text-muted); text-decoration: none;">О клубе</a></li>
+                <li><a href="#cards" style="color: var(--text-muted); text-decoration: none;">Наши услуги</a></li>
+                <li><a href="#gallery" style="color: var(--text-muted); text-decoration: none;">Галерея</a></li>
+            </ul>
+        </aside>
 
-        <section>
-            <h2>Наши Услуги</h2>
-            <div style="background-color: var(--bg-card); padding: 30px; border-radius: 10px; border: 1px solid var(--accent-purple); max-width: 600px; margin: 0 auto;">
-                <ul style="list-style-position: inside; color: var(--text-gray); line-height: 2; font-size: 18px;">
-                    <li>Тренажерный зал с новейшим оборудованием</li>
-                    <li>Групповые фитнес-программы</li>
-                    <li>Бассейн и расслабляющий СПА</li>
-                    <li>Персональные тренировки под ключ</li>
-                </ul>
-            </div>
-        </section>
+        <main>
+            <section id="about">
+                <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Добро пожаловать в HandsUp Fitness</h1>
+                <p style="color: var(--text-muted); font-size: 1.1rem;">Современный фитнес-клуб с передовыми тренировками для вашего идеального тела.</p>
+            </section>
 
-        <section style="margin-top: 40px;">
-            <h2>О разработчиках проекта</h2>
-            <ol style="max-width: 500px; margin: 0 auto; line-height: 1.8; color: var(--text-gray); padding-left: 20px;">
-                <li>Shyndaly Bagnyr</li>
-                <li>Aitzhanova Aigerim</li>
-                <li>Shamshidin Aruzhan</li>
-            </ol>
-        </section>
-    </main>
+            <section id="cards">
+                <h2 style="margin-top: 2rem; font-size: 1.8rem;">Популярные программы</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="тренер 1.jpg" alt="Тренировка">
+                        <div class="card-content">
+                            <h3>Силовой тренинг</h3>
+                            <p>Увеличение мышечной массы и развитие силы под руководством профессионалов.</p>
+                            <a href="pricing.html" class="btn">Выбрать</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="тренер 2.jpg" alt="Тренировка">
+                        <div class="card-content">
+                            <h3>Кроссфит</h3>
+                            <p>Интенсивные функциональные тренировки для выносливости и рельефа.</p>
+                            <a href="pricing.html" class="btn">Выбрать</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="тренер 3.jpg" alt="Тренировка">
+                        <div class="card-content">
+                            <h3>Йога и Стретчинг</h3>
+                            <p>Развитие гибкости, расслабление и восстановление после нагрузок.</p>
+                            <a href="pricing.html" class="btn">Выбрать</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <footer>
-        <p>Разработчики: Shyndaly Bagnyr, Aitzhanova Aigerim, Shamshidin Aruzhan | Группа: SE-2502</p>
-        <p>&copy; 2026 HandsUp Fitness Club.</p>
-    </footer>
+            <section id="gallery">
+                <h2 style="margin-top: 3rem; font-size: 1.8rem;">Галерея клуба</h2>
+                <div class="gallery-container">
+                    <div class="gallery-item">
+                        <img src="тренер 1.jpg" alt="Фото 1">
+                        <div class="gallery-overlay"><h4>Зона кроссфита</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="тренер 2.jpg" alt="Фото 2">
+                        <div class="gallery-overlay"><h4>Тренажерный зал</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="тренер 3.jpg" alt="Фото 3">
+                        <div class="gallery-overlay"><h4>Кардиозона</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="тренер 4.jpg" alt="Фото 4">
+                        <div class="gallery-overlay"><h4>Зал единоборств</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="биг.jpg" alt="Фото 5">
+                        <div class="gallery-overlay"><h4>Бассейн</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="обыч.jpg" alt="Фото 6">
+                        <div class="gallery-overlay"><h4>Зона отдыха</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="тренер 1.jpg" alt="Фото 7">
+                        <div class="gallery-overlay"><h4>Групповые занятия</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="тренер 2.jpg" alt="Фото 8">
+                        <div class="gallery-overlay"><h4>Фитнес-бар</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="тренер 3.jpg" alt="Фото 9">
+                        <div class="gallery-overlay"><h4>Профессиональные тренеры</h4></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 HandsUp Fitness Club. Все права защищены.</p>
+        </footer>
+
+    </div>
 
 </body>
 </html>
