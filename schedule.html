@@ -5,91 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HandsUp Fitness | Расписание</title>
     <link rel="stylesheet" href="webtech.css">
+</head>
 <body>
 
     <header id="main-header">
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="pricing.html">Абонементы</a></li>
-                <li><a href="schedule.html">Расписание</a></li>
-                <li><a href="branches.html">Филиалы</a></li>
-                <li><a href="trainers.html">Тренеры</a></li>
-                <li><a href="profile.html">Запись / Профиль</a></li>
-            </ul>
-        </nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">HandsUp Fitness</a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="pricing.html">Абонементы</a></li>
+                    <li><a href="schedule.html">Расписание</a></li>
+                    <li><a href="branches.html">Филиалы</a></li>
+                    <li><a href="trainers.html">Тренеры</a></li>
+                    <li><a href="profile.html">Запись / Профиль</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <main class="page-container">
         <h1>Расписание групповых программ</h1>
+        <p>Планируйте свои тренировки заранее</p>
 
-    
         <div style="background-color: var(--bg-card); border: 1px solid var(--accent-purple); border-radius: 10px; padding: 20px; margin-bottom: 30px; text-align: center;">
-                <h3 style="color: var(--accent-pink); margin-bottom: 10px;">Локации проведение занятий</h3>
-                 <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 15px; margin-top: 15px;">
-                    <div>
-                        <strong>📍 HandsUp </strong>
-            <p style="color: var(--text-gray); font-size: 14px; margin-top: 5px;">пр. Мангилик Ел, 55 (Главный зал &amp; Бассейн)</p>
-                    </div>
+            <h3 style="color: var(--accent-pink); margin-bottom: 10px;">Локации проведения занятий</h3>
+            <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 15px; margin-top: 15px;">
                 <div>
-            <strong>📍 HandsUp Big </strong>
-            <p style="color: var(--text-gray); font-size: 14px; margin-top: 5px;">ул. Республики, 10 (Кроссфит арена &amp; Сайклинг)</p>
+                    <strong>📍 HandsUp</strong>
+                    <p style="color: var(--text-gray); font-size: 14px; margin-top: 5px;">пр. Мангилик Ел, 55</p>
+                </div>
+                <div>
+                    <strong>📍 HandsUp Big</strong>
+                    <p style="color: var(--text-gray); font-size: 14px; margin-top: 5px;">ул. Республики, 10</p>
                 </div>
             </div>
-            </div>
+        </div>
 
-        
         <table id="pricing-table">
-    <thead>
-        <tr>
-            <th>Время</th>
-            <th>Филиал</th>
-            <th>Понедельник</th>
-            <th>Среда</th>
-            <th>Пятница</th>
-            <th>Суббота</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>09:00</td>
-            <td><strong>HandsUp </strong></td>
-            <td>Йога (Алина)</td>
-            <td>Стретчинг (Алия)</td>
-            <td>Йога (Алина)</td>
-            <td>Стретчинг (Алия)</td>
-        </tr>
-        <tr>
-            <td>11:00</td>
-            <td><strong>HandsUp Big</strong></td>
-            <td>Сайклинг (Аскар)</td>
-            <td>Кроссфит (Нурислам)</td>
-            <td>Сайклинг (Аскар)</td>
-            <td>Кроссфит (Нурислам)</td>
-        </tr>
-        <tr>
-            <td>18:00</td>
-            <td><strong>HandsUp Big</strong></td>
-            <td>Кроссфит (Нурислам)</td>
-            <td>Йога (Алина)</td>
-            <td>Кроссфит (Нурислам)</td>
-            <td>Йога (Алина)</td>
-        </tr>
-        <tr>
-            <td>20:00</td>
-            <td><strong>HandsUp </strong></td>
-            <td>Стретчинг (Алия)</td>
-            <td>Сайклинг (Аскар)</td>
-            <td>Стретчинг (Алия)</td>
-            <td>Сайклинг (Аскар)</td>
-        </tr>
-    </tbody>
-</table>
+            <thead>
+                <tr>
+                    <th>Время</th>
+                    <th>Филиал</th>
+                    <th>Понедельник</th>
+                    <th>Среда</th>
+                    <th>Пятница</th>
+                    <th>Суббота</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>09:00</td>
+                    <td><strong>HandsUp</strong></td>
+                    <td>Йога (Алина)</td>
+                    <td>Стретчинг (Алия)</td>
+                    <td>Йога (Алина)</td>
+                    <td>Стретчинг (Алия)</td>
+                </tr>
+                <tr>
+                    <td>11:00</td>
+                    <td><strong>HandsUp Big</strong></td>
+                    <td>Сайклинг (Аскар)</td>
+                    <td>Кроссфит (Нурислам)</td>
+                    <td>Сайклинг (Аскар)</td>
+                    <td>Кроссфит (Нурислам)</td>
+                </tr>
+                <tr>
+                    <td>18:00</td>
+                    <td><strong>HandsUp Big</strong></td>
+                    <td>Кроссфит (Нурислам)</td>
+                    <td>Йога (Алина)</td>
+                    <td>Кроссфит (Нурислам)</td>
+                    <td>Йога (Алина)</td>
+                </tr>
+                <tr>
+                    <td>20:00</td>
+                    <td><strong>HandsUp</strong></td>
+                    <td>Стретчинг (Алия)</td>
+                    <td>Сайклинг (Аскар)</td>
+                    <td>Стретчинг (Алия)</td>
+                    <td>Сайклинг (Аскар)</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
 
     <footer>
         <p>Разработчики: Shyndaly Bagnyr, Aitzhanova Aigerim, Shamshidin Aruzhan | Группа: SE-2502</p>
-        <p>&copy; 2026 HandsUp Fitness Club. Все права защищены.</p>
+        <p>&copy; 2026 HandsUp Fitness Club.</p>
     </footer>
 
 </body>

@@ -3,58 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>HandsUp Fitness Club</title>
-   
+    <title>HandsUp Fitness Club | Главная</title>
     <link rel="stylesheet" href="webtech.css">
 </head>
 <body>
 
     <header id="main-header">
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="pricing.html">Абонементы</a></li>
-                <li><a href="schedule.html">Расписание</a></li>
-                <li><a href="branches.html">Филиалы</a></li>
-                <li><a href="trainers.html">Тренеры</a></li>
-                <li><a href="profile.html">Запись / Профиль</a></li>
-            </ul>
-        </nav>
-    </header>   
+        <div class="nav-container">
+            <a href="index.html" class="logo">HandsUp Fitness</a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="pricing.html">Абонементы</a></li>
+                    <li><a href="schedule.html">Расписание</a></li>
+                    <li><a href="branches.html">Филиалы</a></li>
+                    <li><a href="trainers.html">Тренеры</a></li>
+                    <li><a href="profile.html">Запись / Профиль</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <main>
-        <section class="hero-section">
-            <h1>Добро пожаловать в наше фитнес-пространство</h1>
-            <p>Достигай своих целей вместе с HandsUp Fitness. Современные технологии тренировок и полная концентрация на результат!</p>
+    <main class="page-container">
+        <section style="text-align: center; padding: 50px 20px; background: linear-gradient(135deg, var(--bg-card), var(--accent-burgundy)); border-radius: 12px; border: 1px solid var(--accent-purple); margin-bottom: 30px;">
+            <h1 style="color: var(--text-light); margin-bottom: 15px;">Добро пожаловать в наше фитнес-пространство</h1>
+            <p style="color: var(--text-gray); max-width: 600px; margin: 0 auto;">Достигай своих целей вместе с HandsUp Fitness. Современные технологии тренировок и полная концентрация на результат!</p>
         </section>
 
         <section>
             <h2>Наши Услуги</h2>
-            <ul class="services-list">
-                <li>Тренажерный зал</li>
-                <li>Групповые программы</li>
-                <li>Бассейн и СПА</li>
-                <li>Персональные тренировки</li>
-            </ul>
+            <div style="background-color: var(--bg-card); padding: 30px; border-radius: 10px; border: 1px solid var(--accent-purple); max-width: 600px; margin: 0 auto;">
+                <ul style="list-style-position: inside; color: var(--text-gray); line-height: 2; font-size: 18px;">
+                    <li>Тренажерный зал с новейшим оборудованием</li>
+                    <li>Групповые фитнес-программы</li>
+                    <li>Бассейн и расслабляющий СПА</li>
+                    <li>Персональные тренировки под ключ</li>
+                </ul>
+            </div>
         </section>
 
-        <section style="margin-top: 50px;">
+        <section style="margin-top: 40px;">
             <h2>О разработчиках проекта</h2>
-            <ol style="max-width: 500px; margin: 0 auto; line-height: 1.8;">
-                <li>Shyndaly Bagnyr (Home, Pricing)</li>
-                <li>Aitzhanova Aigerim (Schedule, Branches)</li>
-                <li>Shamshidin Aruzhan (Trainers, Profile)</li>
+            <ol style="max-width: 500px; margin: 0 auto; line-height: 1.8; color: var(--text-gray); padding-left: 20px;">
+                <li>Shyndaly Bagnyr</li>
+                <li>Aitzhanova Aigerim</li>
+                <li>Shamshidin Aruzhan</li>
             </ol>
         </section>
     </main>
 
-</body>
-</html>
-
-
     <footer>
-        <p>Разработчики: Bagnur, Aigerim, Aruzhan | Группа: SE-2502</p>
+        <p>Разработчики: Shyndaly Bagnyr, Aitzhanova Aigerim, Shamshidin Aruzhan | Группа: SE-2502</p>
         <p>&copy; 2026 HandsUp Fitness Club.</p>
     </footer>
 

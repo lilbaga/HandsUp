@@ -14,46 +14,16 @@
     padding: 0;
 }
 
-/* Базовые стили сайта */
 body {
-    margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
     line-height: 1.6;
     background-color: var(--bg-deep);
     color: var(--text-light);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-main {
-    padding: 40px 20px;
-    min-height: 70vh;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-h1, h2 {
-    text-align: center;
-    color: var(--text-light);
-}
-
-.page-container {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 0 20px;
-}
-
-.page-container h1 {
-    margin-bottom: 10px;
-    color: var(--accent-pink);
-    text-align: center;
-}
-
-.page-container > p {
-    margin-bottom: 25px;
-    color: var(--text-gray);
-    text-align: center;
-}
-
-/* Навигация и шапка */
 #main-header {
     background-color: var(--bg-card);
     border-bottom: 2px solid var(--accent-burgundy);
@@ -63,12 +33,26 @@ h1, h2 {
     z-index: 100;
 }
 
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--accent-pink);
+    text-decoration: none;
+}
+
 .nav-menu ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    align-items: center;
+    gap: 15px;
     margin: 0;
     padding: 0;
 }
@@ -77,7 +61,7 @@ h1, h2 {
     color: var(--text-light);
     text-decoration: none;
     font-weight: bold;
-    padding: 8px 16px;
+    padding: 8px 14px;
     border-radius: 4px;
     transition: all 0.3s ease;
 }
@@ -87,7 +71,121 @@ h1, h2 {
     color: #ffffff;
 }
 
-/* Кнопки */
+.page-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+    flex: 1;
+    width: 100%;
+}
+
+.page-container h1, .page-container h2 {
+    color: var(--accent-pink);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.page-container > p {
+    margin-bottom: 25px;
+    color: var(--text-gray);
+    text-align: center;
+}
+
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.branch-card, .trainer-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--accent-purple);
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.branch-card:hover, .trainer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(216, 27, 96, 0.3);
+}
+
+.branch-card img, .trainer-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 15px 0;
+    border: 1px solid var(--accent-purple);
+}
+
+.branch-card ul, .trainer-card ul {
+    margin-left: 20px;
+    margin-top: 10px;
+    color: var(--text-gray);
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 200px;
+    border: 1px solid var(--accent-purple);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(93, 12, 50, 0.85);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: height 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.gallery-item:hover .gallery-overlay {
+    height: 100%;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-overlay p {
+    color: var(--text-light);
+    font-size: 16px;
+    font-weight: bold;
+}
+
 .btn {
     background-color: var(--accent-pink);
     color: white;
@@ -97,45 +195,15 @@ h1, h2 {
     cursor: pointer;
     font-weight: bold;
     transition: background 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .btn:hover {
     background-color: #b0144f;
 }
 
-/* Футер */
-footer {
-    background-color: var(--bg-card);
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-    border-top: 2px solid var(--accent-burgundy);
-    font-size: 14px;
-    color: var(--text-gray);
-}
-
-/* Главная страница */
-.hero-section {
-    text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(135deg, var(--bg-card), var(--accent-burgundy));
-    border-radius: 12px;
-    margin-bottom: 30px;
-    border: 1px solid var(--accent-purple);
-}
-
-.services-list {
-    background-color: var(--bg-card);
-    padding: 30px 40px;
-    border-radius: 10px;
-    border: 1px solid var(--accent-purple);
-    line-height: 2;
-    font-size: 18px;
-    max-width: 600px;
-    margin: 20px auto;
-}
-
-/* Таблица цен и расписания */
 #pricing-table {
     width: 100%;
     border-collapse: collapse;
@@ -146,8 +214,7 @@ footer {
     border: 1px solid var(--accent-purple);
 }
 
-#pricing-table th, 
-#pricing-table td {
+#pricing-table th, #pricing-table td {
     border: 1px solid rgba(139, 30, 139, 0.3);
     padding: 15px;
     text-align: center;
@@ -162,87 +229,10 @@ footer {
     background-color: rgba(255, 255, 255, 0.03);
 }
 
-/* Расписание и Филиалы */
-.schedule-container {
-    padding: 30px 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.branch-card {
-    background-color: var(--bg-card);
-    border: 1px solid var(--accent-purple);
-    border-radius: 10px;
-    padding: 25px;
-    margin: 20px auto;
-    max-width: 800px;
-}
-
-.branch-card h2 {
-    color: var(--accent-pink);
-    text-align: left;
-    margin-bottom: 10px;
-}
-
-.branch-card img {
-    width: 100%;
-    max-height: 280px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin: 15px 0;
-    border: 1px solid var(--accent-purple);
-}
-
-.branch-card ul {
-    margin-left: 20px;
-    margin-top: 8px;
-    color: var(--text-gray);
-}
-
-/*Тренеры*/
-.trainers-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.trainer-card {
-    background: #1f0b35;
-    border: 1px solid var(--accent-purple);
-    border-radius: 12px;
-    overflow: hidden;
-    width: 300px;
-    text-align: center;
-    padding-bottom: 15px;
-}
-
-.trainer-card img {
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
-    display: block;
-}
-
-.trainer-card h2 {
-    font-size: 20px;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    color: var(--text-light);
-}
-
-.trainer-card ul {
-    list-style: none;
-    padding: 0 15px;
-    margin-top: 10px;
-    color: var(--text-gray);
-}
-
-/* Профиль*/
 #contact-form {
     background-color: var(--bg-card);
     max-width: 500px;
-    margin: 40px auto;
+    margin: 20px auto;
     padding: 30px;
     border-radius: 10px;
     border: 1px solid var(--accent-purple);
@@ -256,28 +246,17 @@ footer {
     color: var(--text-light);
 }
 
-#contact-form input[type="text"],
-#contact-form input[type="email"],
-#contact-form input[type="tel"],
+#contact-form input,
 #contact-form select,
 #contact-form textarea {
     width: 100%;
     padding: 12px;
-    margin-top: 8px;
+    margin-top: 5px;
     margin-bottom: 15px;
     background-color: var(--bg-deep);
     border: 1px solid var(--accent-purple);
     color: var(--text-light);
     border-radius: 5px;
-    box-sizing: border-box;
-}
-
-#contact-form input[type="color"] {
-    width: 50px;
-    height: 35px;
-    border: none;
-    cursor: pointer;
-    background: transparent;
 }
 
 #contact-form input:focus,
@@ -287,7 +266,12 @@ footer {
     outline: none;
 }
 
-#contact-form .btn {
-    margin-top: 20px;
-    width: 100%;
+footer {
+    background-color: var(--bg-card);
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    border-top: 2px solid var(--accent-burgundy);
+    font-size: 14px;
+    color: var(--text-gray);
 }

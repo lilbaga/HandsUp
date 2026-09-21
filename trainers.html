@@ -9,61 +9,117 @@
 <body>
 
     <header id="main-header">
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="pricing.html">Абонементы</a></li>
-                <li><a href="schedule.html">Расписание</a></li>
-                <li><a href="branches.html">Филиалы</a></li>
-                <li><a href="trainers.html">Тренеры</a></li>
-                <li><a href="profile.html">Запись / Профиль</a></li>
-            </ul>
-        </nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">HandsUp Fitness</a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="pricing.html">Абонементы</a></li>
+                    <li><a href="schedule.html">Расписание</a></li>
+                    <li><a href="branches.html">Филиалы</a></li>
+                    <li><a href="trainers.html">Тренеры</a></li>
+                    <li><a href="profile.html">Запись / Профиль</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main class="page-container">
         <h1>Наша команда тренеров</h1>
         <p>Профессиональные наставники помогут вам достичь результатов!</p>
 
-        <div class="trainers-grid">
+        <div class="card-row">
             <div class="trainer-card">
-                <img src="тренер 1.jpg">
-                <h2>Бейсенбек Нурислам</h2>
-                <p><strong>Специализация:</strong> Силовой тренинг</p>
-                <ul>
-                    <li>Опыт работы: 6 лет</li>
-                    <li>Мастер спорта по пауэрлифтингу</li>
-                </ul>
-            </div>
-
-        <div class="trainer-card">
-                <img src="тренер 3.jpg">
-                <h2>Кайратов Аскар</h2>
-                <p><strong>Специализация:</strong> Кроссфит и силовой тренинг</p>
-                <ul>
-                    <li>Опыт работы: 5 лет</li>
-                    <li>Сертифицированный тренер по функциональному тренингу</li>
-                </ul>
-            </div>
-        
-        <div class="trainer-card">
-                <img src="тренер 4.jpg">
-                <h2>Жумабекова Алия</h2>
-                <p><strong>Специализация:</strong> Пилатес и Стретчинг</p>
-                <ul>
-                    <li>Опыт работы: 3 года</li>
-                    <li>Сертифицированный инструктор по пилатесу</li>
-                </ul>
+                <div>
+                    <img src="тренер 1.jpg" alt="Нурислам">
+                    <h2>Бейсенбек Нурислам</h2>
+                    <p><strong>Специализация:</strong> Силовой тренинг</p>
+                    <ul>
+                        <li>Опыт работы: 6 лет</li>
+                        <li>Мастер спорта</li>
+                    </ul>
+                </div>
+                <a href="profile.html" class="btn" style="margin-top: 15px;">Записаться</a>
             </div>
 
             <div class="trainer-card">
-                <img src="тренер 2.jpg">
-                <h2>Турсынбаева Алина</h2>
-                <p><strong>Специализация:</strong> Йога и Стретчинг</p>
-                <ul>
-                    <li>Опыт работы: 4 года</li>
-                    <li>Сертифицированный инструктор</li>
-                </ul>
+                <div>
+                    <img src="тренер 3.jpg" alt="Аскар">
+                    <h2>Кайратов Аскар</h2>
+                    <p><strong>Специализация:</strong> Кроссфит</p>
+                    <ul>
+                        <li>Опыт работы: 5 лет</li>
+                        <li>Функциональный тренинг</li>
+                    </ul>
+                </div>
+                <a href="profile.html" class="btn" style="margin-top: 15px;">Записаться</a>
+            </div>
+
+            <div class="trainer-card">
+                <div>
+                    <img src="тренер 4.jpg" alt="Алия">
+                    <h2>Жумабекова Алия</h2>
+                    <p><strong>Специализация:</strong> Пилатес</p>
+                    <ul>
+                        <li>Опыт работы: 3 года</li>
+                        <li>Инструктор</li>
+                    </ul>
+                </div>
+                <a href="profile.html" class="btn" style="margin-top: 15px;">Записаться</a>
+            </div>
+
+            <div class="trainer-card">
+                <div>
+                    <img src="тренер 2.jpg" alt="Алина">
+                    <h2>Турсынбаева Алина</h2>
+                    <p><strong>Специализация:</strong> Йога</p>
+                    <ul>
+                        <li>Опыт работы: 4 года</li>
+                        <li>Инструктор по йоге</li>
+                    </ul>
+                </div>
+                <a href="profile.html" class="btn" style="margin-top: 15px;">Записаться</a>
+            </div>
+        </div>
+
+        <h2 style="margin-top: 50px;">Галерея клуба</h2>
+        <p>Посмотрите на атмосферу наших залов</p>
+        <div class="image-gallery">
+            <div class="gallery-item">
+                <img src="биг.jpg" alt="Фото 1">
+                <div class="gallery-overlay"><p>Тренажерный зал</p></div>
+            </div>
+            <div class="gallery-item">
+                <img src="обыч.jpg" alt="Фото 2">
+                <div class="gallery-overlay"><p>Зона кроссфита</p></div>
+            </div>
+            <div class="gallery-item">
+                <img src="тренер 1.jpg" alt="Фото 3">
+                <div class="gallery-overlay"><p>Силовые тренировки</p></div>
+            </div>
+            <div class="gallery-item">
+                <img src="тренер 2.jpg" alt="Фото 4">
+                <div class="gallery-overlay"><p>Йога студия</p></div>
+            </div>
+            <div class="gallery-item">
+                <img src="тренер 3.jpg" alt="Фото 5">
+                <div class="gallery-overlay"><p>Функциональная зона</p></div>
+            </div>
+            <div class="gallery-item">
+                <img src="тренер 4.jpg" alt="Фото 6">
+                <div class="gallery-overlay"><p>Зал пилатеса</p></div>
+            </div>
+            <div class="gallery-item">
+                <img src="биг.jpg" alt="Фото 7">
+                <div class="gallery-overlay"><p>Бассейн</p></div>
+            </div>
+            <div class="gallery-item">
+                <img src="обыч.jpg" alt="Фото 8">
+                <div class="gallery-overlay"><p>Фито-бар</p></div>
+            </div>
+            <div class="gallery-item">
+                <img src="биг.jpg" alt="Фото 9">
+                <div class="gallery-overlay"><p>Зона отдыха</p></div>
             </div>
         </div>
     </main>
@@ -74,4 +130,4 @@
     </footer>
 
 </body>
-</html>S
+</html>
